@@ -108,13 +108,13 @@ var retail_radius_props = {
 };
 	
 var listings_amount = {
- 	property: 'median_rent',
-	type: 'interval', 
+ 	property: 'mean_sqft_rent',
+	type: 'exponential', 
 	stops: [
 				[0, listings_colors[0]],
-				[1000, listings_colors[0]],
-				[2000, listings_colors[1]],
-				[3000, listings_colors[2]]]
+				[1, listings_colors[0]],
+				[3, listings_colors[1]],
+				[5, listings_colors[2]]]
 	};
 
 var listings_radius_props = {
