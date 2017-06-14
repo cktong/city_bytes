@@ -32,7 +32,7 @@
 	<select id="legend_type">
 	    <option value="business_number">Businesses</option>
 	    <option value="retail">Retail</option>
-		<option value="listings_amount">Rental Listings</option>
+		<option value="listings_amount">Rental Prices</option>
 	</select>
 	<br>
 	<button class="button" onclick="switch_data(currentlayer)">Update Map</button>
@@ -123,7 +123,7 @@ function legend_change(layer_type) {
 // 	commenting out and force coding for presentation's sake
 	if (layer_type == "business_number") {
 		var type = biz_labels;
-		var layer_type = 'Businesses'
+		var layer_type = 'Businesses within 1000 meters'
 	}
 	else if (layer_type == "retail") {
 		var type = retail_labels;
@@ -131,7 +131,7 @@ function legend_change(layer_type) {
 	}
 	else if (layer_type == "listings_amount") {
 		var type = listings_labels;
-		var layer_type = 'Rental Prices'
+		var layer_type = 'Rental Prices ($ per sq ft)'
 	}
 
 	console.log(layer_type)
@@ -202,4 +202,6 @@ function fly(layer){
 </script>
 
 </body>
+
+<footer><a href="cktong.github.io">Copyright © 2017 Christopher Tong</a></footer>
 </html>

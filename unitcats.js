@@ -50,8 +50,8 @@ var biz_labels = {0: {'label': '< 5', 'color': biz_colors[0]}, 1: {'label': '5 &
 var retail_labels = {0: {'label': '<5', 'color': retail_colors[0]}, 1: {'label': '6&ndash;10', 'color': retail_colors[1]}, 
 			   2: {'label': '11&ndash;40', 'color': retail_colors[2]}};		 
 
-var listings_labels = {0: {'label': '< $1000', 'color': listings_colors[0]}, 1: {'label': '$1000 &ndash; $3000', 'color': listings_colors[1]}, 
-			   2: {'label': '> $3000', 'color': listings_colors[2]}};
+var listings_labels = {0: {'label': '< $2', 'color': listings_colors[0]}, 1: {'label': '$2 &ndash; $4', 'color': listings_colors[1]}, 
+			   2: {'label': '> $4', 'color': listings_colors[2]}};
 
 
 // the stops for radius and color of maps
@@ -109,12 +109,12 @@ var retail_radius_props = {
 	
 var listings_amount = {
  	property: 'mean_sqft_rent',
-	type: 'exponential', 
+	type: 'interval', 
 	stops: [
 				[0, listings_colors[0]],
-				[1, listings_colors[0]],
+				[1.5, listings_colors[0]],
 				[3, listings_colors[1]],
-				[5, listings_colors[2]]]
+				[4, listings_colors[2]]]
 	};
 
 var listings_radius_props = {
@@ -122,11 +122,11 @@ var listings_radius_props = {
     'base': 1,
     type: 'exponential',
 	stops: [
-				[{zoom: 11, value:0}, .5],
+				[{zoom: 11, value:0}, .2],
 				[{zoom: 11, value:5},1],
 				[{zoom: 11, value:10},1.5],
 				[{zoom: 11, value:20}, 2],
-				[{zoom: 20, value:0}, 4],
+				[{zoom: 20, value:0}, 2],
 				[{zoom: 20, value:5},6],
 				[{zoom: 20, value:10},8],
 				[{zoom: 20, value:20}, 10]

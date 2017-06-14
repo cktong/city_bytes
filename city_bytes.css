@@ -98,3 +98,23 @@ line-height: 20px;
 .mapboxgl-control-container{
 	display:none;
 }
+
+
+footer {
+    position: absolute;
+    margin-bottom: 10px;
+    margin-right: 1%;
+    bottom: 0;
+    right: 0
+}
+
+footer a {
+    border-bottom: 0;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    border-bottom: 0;
+    color: #4d4f50
+}
