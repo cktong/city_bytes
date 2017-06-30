@@ -193,7 +193,7 @@ function mousemove_init(layer_type) {
 function fly(layer){
     switch_data(layer)
     map.flyTo({
-    	zoom: 11,
+    	zoom: layer.zoom,
         center: layer.location
     });
 

@@ -9,25 +9,29 @@ var layer_sf = {
 				'name': 'San Francisco',
 				'location': [-122.35, 37.77],
 				// 'link': 'sf-listings-accessibility-8j7weg'
-				'link': 'bayarea-listings-accessibilit-ck8ev4'
+				'link': 'bayarea-listings-accessibilit-ck8ev4',
+				'zoom': 11				
 				}
 
 var layer_nyc = {
 				'name': 'New York City',
 				'location': [-73.998,40.721],
-				'link': 'ny-listings-accessibility-dmmj0i'
+				'link': 'ny-listings-accessibility-dmmj0i',
+				'zoom': 12
 				}
 
 var layer_la = {
 				'name': 'Los Angeles',
 				'location': [-118.325,34.031],
-				'link': 'la-listings-accessibility-cuukn9'
+				'link': 'la-listings-accessibility-cuukn9',
+				'zoom': 11
 				}
 
 var layer_atl = {
 				'name': 'Atlanta',
 				'location': [-84.381,33.768],
-				'link': 'atlanta-listings-accessibilit-15y8ba'
+				'link': 'atlanta-listings-accessibilit-15y8ba',
+				'zoom': 11
 				}
 
 // Define color categories for mapping listings
