@@ -45,14 +45,14 @@ var layer_atl = {
 // var colors = ['#E1FD3A', '#EA6529', '#F0001F', '#A6071C']; //yellow-to-red
 
 var biz_colors = ['#bae4bc','#EA6529','#fdffd1']
-var retail_colors = ['#ffffff','#44EDFF','#3EABE8']
+var retail_colors = ['#ffffff','#44EDFF','#3EABE8','#40FFB4']
 var listings_colors = ['#3347B2','#7B90FF','#FFD962']
 
 var biz_labels = {0: {'label': '< 5', 'color': biz_colors[0]}, 1: {'label': '5 &ndash; 60', 'color': biz_colors[1]}, 
 			   2: {'label': '> 60', 'color': biz_colors[2]}};
 
 var retail_labels = {0: {'label': '<5', 'color': retail_colors[0]}, 1: {'label': '6&ndash;10', 'color': retail_colors[1]}, 
-			   2: {'label': '11&ndash;40', 'color': retail_colors[2]}};		 
+			   2: {'label': '11&ndash;40', 'color': retail_colors[2]}, 3:{'label': '> 40', 'color': retail_colors[3]}};		 
 
 var listings_labels = {0: {'label': '< $2', 'color': listings_colors[0]}, 1: {'label': '$2 &ndash; $4', 'color': listings_colors[1]}, 
 			   2: {'label': '> $4', 'color': listings_colors[2]}};
@@ -91,7 +91,8 @@ var retail = {
 				[0,retail_colors[0]],
 				[5,retail_colors[0]],
 				[10,retail_colors[1]],
-				[20, retail_colors[2]]]
+				[20, retail_colors[2]],
+				[100,retail_colors[3]]]
 };
 var retail_radius_props = {
 	property: 'retail',
@@ -103,11 +104,13 @@ var retail_radius_props = {
 				[{zoom: 11, value:10},1.5],
 				[{zoom: 11, value:20}, 2],
 				[{zoom: 11, value:100}, 4],
+				[{zoom: 11, value:200}, 8],
 				[{zoom: 20, value:0}, .5],
 				[{zoom: 20, value:5},6],
 				[{zoom: 20, value:10},8],
 				[{zoom: 20, value:20}, 10],
-				[{zoom: 20, value:100}, 15]
+				[{zoom: 20, value:100}, 15],
+				[{zoom: 30, value:200}, 30],
 				]
 };
 	
