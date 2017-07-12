@@ -1,4 +1,4 @@
-body { margin:0; padding:0; }
+body { margin:0; padding:0;}
 
 a{ color: black; }
 
@@ -98,7 +98,7 @@ line-height: 20px;
 }
 
 .mapboxgl-control-container{
-	/*display:none;*/
+	display:none;
 }
 
 .mapboxgl-ctrl-top-right{
